@@ -43,7 +43,6 @@
   gap: 10px;
 }
 
-/* buttons */
 .btn {
   padding: 8px 12px;
   border-radius: 8px;
@@ -58,7 +57,6 @@
   border: none;
 }
 
-/* Admin list */
 .admin-container {
   padding: 18px;
 }
@@ -95,7 +93,6 @@
 .user-name { font-weight:700 }
 .user-sub { font-size: 13px; color: #666 }
 
-/* Modal */
 .modalOverlay {
   position: fixed;
   inset: 0;
@@ -115,7 +112,6 @@
 .modal-field { margin: 8px 0; color: #333 }
 .modal-actions { margin-top: 12px; display:flex; gap:8px; }
 
-/* forms */
 .form-group { display:flex; flex-direction:column; gap:6px; margin-top:10px; }
 .form-group input, .form-group textarea {
   padding: 8px 10px;
@@ -125,7 +121,6 @@
 }
 .form-group textarea { min-height: 80px; resize: vertical; }
 
-/* small responsive fixes */
 @media (max-width: 640px) {
   .users-grid { grid-template-columns: 1fr; }
   .profile-card { padding: 16px; }
