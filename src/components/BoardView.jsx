@@ -1,4 +1,3 @@
-// src/components/BoardView.jsx
 import React from "react";
 import EditIcon from "@mui/icons-material/EditNoteOutlined";
 import DeleteIcon from "@mui/icons-material/DeleteOutlineOutlined";
