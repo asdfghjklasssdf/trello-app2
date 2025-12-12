@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import "../css/Dashboard.css";
 
@@ -185,7 +184,6 @@ export default function Dashboard() {
   const onSelectBoard = useCallback((i) => setSelectedBoardIndex(i), []);
   const onAddBoardClick = useCallback(() => openModal("Add New Board", (val) => addBoard(val)), [openModal, addBoard]);
 
-  // NEW: openBoard used to open BoardView on double-click
   const openBoard = useCallback((index) => {
     if (index == null) return;
     setSelectedBoardIndex(index);
