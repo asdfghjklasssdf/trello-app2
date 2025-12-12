@@ -34,13 +34,11 @@ export default function EditProfile() {
   const handleSave = () => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
-    // basic validation
     if (!form.email.trim() || !form.username.trim()) {
       alert("Email and username are required");
       return;
     }
 
-    // uniqueness check (except current user)
     const conflict = users.find(u => (u.email === form.email.trim() || u.username === form.username.trim()) && u.id !== user.id);
     if (conflict) {
       alert("Another user already uses that email/username");
