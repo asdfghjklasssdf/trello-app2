@@ -1,0 +1,83 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+min-height: 100vh;      /* allow scroll if needed */
+    width: 100%;
+    padding: 20px;          /* prevents zoom squeeze on small devices */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;    font-family: system-ui, sans-serif;
+}
+
+.profile-card {
+    width: 360px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-weight: 700;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.profile-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ccc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #b5b5b5;
+}
+.back-btn a {
+    text-decoration: none;
+    color: #333;
+}

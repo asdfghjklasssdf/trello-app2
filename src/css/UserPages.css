@@ -1,0 +1,132 @@
+.profile-container {
+  width: 100%;
+  min-height: 160vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+.avatar-large {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6c5ce7,#00b894);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.field {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.profile-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+/* buttons */
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: #fff;
+}
+.btn:hover { filter:brightness(0.98) }
+.btn-danger {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+}
+
+/* Admin list */
+.admin-container {
+  padding: 18px;
+}
+.users-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+.user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.avatar-sm {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #6366f1;
+  color: white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+}
+.user-name { font-weight:700 }
+.user-sub { font-size: 13px; color: #666 }
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modalBox {
+  max-width: 640px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+}
+.modal-field { margin: 8px 0; color: #333 }
+.modal-actions { margin-top: 12px; display:flex; gap:8px; }
+
+/* forms */
+.form-group { display:flex; flex-direction:column; gap:6px; margin-top:10px; }
+.form-group input, .form-group textarea {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.form-group textarea { min-height: 80px; resize: vertical; }
+
+/* small responsive fixes */
+@media (max-width: 640px) {
+  .users-grid { grid-template-columns: 1fr; }
+  .profile-card { padding: 16px; }
+}
