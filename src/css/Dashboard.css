@@ -9,16 +9,14 @@
     background-color: #f5f5f5;
     min-height: 100vh;
     font-family: system-ui, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-sizing: border-box;
 }
 
 
 .addBoardBtn {
     padding: 10px 16px;
     margin-bottom: 20px;
-    background-color: white;
-    color: #764ba2;
+    background-color: #0079bf;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -130,7 +128,6 @@
     border-radius: 6px;
 }
 
-/* Modern Glassmorphism Modal */
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -348,7 +345,6 @@
   color: white;
 }
 
-/* Board / List header single-line layout */
 .boardHeader,
 .listHeader {
   display: flex;
@@ -372,7 +368,6 @@
   white-space: nowrap;
 }
 
-/* Actions block */
 .boardActions,
 .listActions {
   display: flex;
@@ -380,7 +375,6 @@
   gap: 6px;
 }
 
-/* icon button styling */
 .iconBtn {
   display: inline-flex;
   align-items: center;
@@ -400,7 +394,6 @@
   outline: none;
 }
 
-/* Top bar layout */
 .top-bar {
   display: flex;
   align-items: center;
@@ -409,7 +402,6 @@
   padding: 12px;
 }
 
-/* List card container */
 .list {
   display: flex;
   flex-direction: column;
@@ -417,7 +409,6 @@
   max-width: 320px;
 }
 
-/* responsiveness */
 @media (max-width: 700px) {
   .boardTitle,
   .listTitle {
@@ -427,11 +418,10 @@
     min-width: 200px;
   }
 }
-/* inline error box for modal */
 .modalError {
-  background: #fff0f0;          /* subtle red-ish bg */
-  color: #b00020;               /* error text */
-  border: 1px solid #f5c6cb;    /* light border */
+  background: #fff0f0;         
+  color: #b00020;               
+  border: 1px solid #f5c6cb;    
   padding: 8px 10px;
   border-radius: 6px;
   margin-top: 8px;
